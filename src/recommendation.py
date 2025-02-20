@@ -2,6 +2,7 @@ import pandas as pd
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
+
 # Load the cleaned data
 def load_data(file_path):
     return pd.read_csv(file_path)
@@ -11,6 +12,8 @@ def vectorize_text(df):
     vectorizer = TfidfVectorizer(stop_words='english')
     tfidf_matrix = vectorizer.fit_transform(df['combined_text'])  # Correct column name here
     return tfidf_matrix, vectorizer
+
+
 
 # Get recommendations based on course ID (or title)
 def get_recommendations(course_id, df, tfidf_matrix):
@@ -48,3 +51,6 @@ if __name__ == "__main__":
     if recommended_courses is not None:
         print(f"Recommended courses for course ID {course_id}:")
         print(recommended_courses)
+
+
+
