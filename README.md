@@ -12,7 +12,7 @@ This project is a content-based course recommendation system that suggests Udemy
 - [License](#license)
 
 ## Dataset
-The dataset used for this project is sourced from Kaggle: [Udemy Course Dataset](https://www.kaggle.com/datasets).
+The dataset used for this project is sourced from Kaggle: [Udemy Course Dataset](https://www.kaggle.com/datasets/andrewmvd/udemy-courses).
 
 **Important:** Please check the licensing information on the Kaggle page before using this dataset in production.
 
