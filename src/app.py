@@ -7,10 +7,10 @@ from sklearn.metrics.pairwise import cosine_similarity
 df = pd.read_csv('artifacts/cleaned_udemy_courses.csv')
 
 # Load the saved TF-IDF vectorizer and matrix
-with open('artifacts/tfidf_vectorizer.pkl', 'rb') as f:
+with open('src/tfidf_model/tfidf_vectorizer.pkl', 'rb') as f:
     tfidf_vectorizer = pickle.load(f)
 
-with open('artifacts/tfidf_matrix.pkl', 'rb') as f:
+with open('src/tfidf_model/tfidf_matrix.pkl', 'rb') as f:
     tfidf_matrix = pickle.load(f)
 
 # Function to recommend courses

@@ -4,3 +4,7 @@ flask
 nltk
 scikit-learn
 streamlit
+sentence-transformers 
+faiss-cpu
+seaborn
+matplotlib
